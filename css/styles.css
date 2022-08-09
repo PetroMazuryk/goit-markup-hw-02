@@ -1,0 +1,220 @@
+
+   
+:root {
+    --primary-text-color: #212121;
+    --primary-white-color: #ffffff;
+    --main-text-color: #757575;
+    --header-logo-color: #000000; 
+    --accent-color: #2196F3;
+    --hero-footer-backgraund-color:#2F303A;
+    --button-color: #FFFFFF;
+    --footer-logo-color: #FFFFFF;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --section-backgraund-color:#F5F4FA;
+   }
+
+/* <h2> найчастіше використовується, хоча головний текст мав би бути — це <p> */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    }
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+/* Шапка header nav */
+.header-logo {
+font-family: 'Raleway';
+font-size: 26px;
+line-height: 1.19;
+color: var(--header-logo-color);
+}
+
+.logo-accent {
+color: var(--accent-color);
+}
+
+.header-link {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+
+}
+.header-link:hover,
+.header-link:focus,
+.auth-link:hover,
+.auth-link:focus {
+    color: var(--accent-color);
+}
+
+.auth-link {
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-text-color);
+}
+
+/* Ефективні рішення */
+.hero {
+    background-color: var(--hero-footer-backgraund-color);
+}
+
+.hero-title {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--primary-white-color)
+}
+
+.hero-button {
+font-family: 'Roboto';
+font-style: normal;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+color: var(--button-color);
+background-color: var(--accent-color);
+cursor: pointer;
+}
+
+/* особливості */
+/* приховування h2 на сторінці Веб студія > секція 2 
+ та h1 на сторінці портфоліо */
+.features-method {
+    visibility: hidden;
+}
+
+.features-title {
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+
+.features-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: var(--main-text-color);
+}
+
+/* чим ми займаємось */
+/* (h2) успадкував усе від body  */
+
+/* наша команда */
+/* (h2) успадкував усе від body  */
+
+.team {
+    background-color: var(--section-backgraund-color);
+}
+
+.team-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+}
+
+.team-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+color: var(--main-text-color);
+}
+
+/* підвад */
+.basement {
+    background-color: var(--hero-footer-backgraund-color);
+}
+
+.footer-logo {
+font-family: 'Raleway';
+font-size: 26px;
+line-height: 1.19;
+color: var(--footer-logo-color);
+}
+
+.footer-accent {
+color: var(--accent-color);
+}
+
+.footer-link {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: var(--footer-logo-color);
+}
+
+.footer-mail,
+.footer-tel {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: var(--footer-text-color);
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+ color: var(--accent-color);
+}
+/* ----------------------------------- */
+        /*  Портфоліо  */
+
+.portfolio-button {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+color: var(--primary-text-color);
+background: var(--section-backgraund-color);
+border-radius: 4px;
+cursor: pointer;
+}   
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+color: var(--button-color);
+background-color: var(--accent-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+
+.portfolio-title {
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--primary-text-color);
+}
+
+.portfolio-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.9;
+color: var(--main-text-color);
+
+}
+
