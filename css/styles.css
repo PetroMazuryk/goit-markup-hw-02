@@ -85,8 +85,7 @@ color: var(--primary-white-color)
 }
 
 .hero-button {
-font-family: 'Roboto';
-font-style: normal;
+font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
@@ -101,8 +100,18 @@ cursor: pointer;
 /* особливості */
 /* приховування h2 на сторінці Веб студія > секція 2 
  та h1 на сторінці портфоліо */
-.features-method {
-    visibility: hidden;
+
+.visually-hidden {
+ position: absolute;
+ white-space: nowrap;
+ width: 1px;
+ height: 1px;
+ overflow: hidden;
+ border: 0;
+ padding: 0;
+ clip: rect(0 0 0 0);
+ clip-path: inset(50%);
+ margin: -1px;
 }
 
 .features-title {
@@ -155,6 +164,7 @@ color: var(--main-text-color);
 .footer-logo {
 font-family: 'Raleway';
 font-weight: 700;
+font-style: normal;
 font-size: 26px;
 line-height: 1.19;
 color: var(--footer-logo-color);
@@ -165,11 +175,13 @@ color: var(--accent-color);
 }
 
 .footer-link {
+font-style:normal;
 color: var(--footer-logo-color);
 }
 
 .footer-mail,
 .footer-tel {
+font-style:normal;   
 color: var(--footer-text-color);
 }
 
@@ -181,15 +193,13 @@ color: var(--footer-text-color);
 .footer-tel:focus {
  color: var(--accent-color);
 }
-.link {
-    cursor: default;
-}
+
+
 /* ----------------------------------- */
         /*  Портфоліо  */
 
 .portfolio-button {
-font-family: 'Roboto';
-font-style: normal;
+font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
